@@ -1,0 +1,25 @@
+.sidebar_row {
+  display: flex;
+  align-items: center;
+  height: 20px;
+  width: 192px;
+  padding: 10px 20px;
+}
+
+.sidebar_row_icon {
+  color: #606060;
+  font-size: 22px !important;
+}
+
+.sidebarRow_title {
+  flex: 1;
+  margin-left: 20px;
+  font-size: 14px;
+  font-weight: 500;
+  color: rgb(92, 92, 92);
+}
+
+.sidebar_row:hover {
+  background-color: lightgray;
+  cursor: pointer;
+}
