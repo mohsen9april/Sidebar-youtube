@@ -25,11 +25,25 @@ import SidebarRow from "../SidebarRow/SidebarRow";
 import "./Sidebar.css";
 
 const Header = () => {
+  const toggleSidebar = () => {
+    console.log("clicked!");
+    const sidebar = document.querySelector(".sidebar");
+    const MiniSidebar = document.querySelector(".sidebar_mini");
+    if (sidebar) {
+      sidebar.classList.toggle("active");
+    }
+    if (MiniSidebar) {
+      MiniSidebar.classList.toggle("active");
+    }
+  };
+
   return (
     <div className="parent_header">
       <div className="header">
         <div className="header__left">
-          <MenuIcon />
+          <div onClick={toggleSidebar}>
+            <MenuIcon />
+          </div>
           <img className="header__logo" src="./images/yt-logo.png" alt="/" />
         </div>
 

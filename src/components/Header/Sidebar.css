@@ -15,7 +15,11 @@
   overflow-x: hidden;
   left: 0;
   top: 10px;
-  display: none;
+  transition: 0.5s ease;
+}
+
+.sidebar.active {
+  left: -16%;
 }
 
 .sidebar hr {
@@ -55,10 +59,15 @@
   background-color: white;
   width: 5%;
   position: fixed;
-  top: 90px;
+  top: 60px;
   z-index: 50;
   height: 92vh;
+  left: -100px;
+}
+
+.sidebar_mini.active {
   left: 0;
+  transition: 0.5s ease;
 }
 
 .miniDiv {
