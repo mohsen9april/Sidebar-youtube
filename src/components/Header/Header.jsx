@@ -71,7 +71,25 @@ const Header = () => {
         <SidebarRow icon={<FeedbackIcon />} title="Feedback" />
         <hr />
         <div className="footer">
-          <p>About &nbsp; Press &nbsp; Copyright</p>
+          <p>About &nbsp; Press </p>
+        </div>
+      </div>
+      <div className="sidebar_mini">
+        <div className="miniDiv">
+          <HomeIcon />
+          <p>Home</p>
+        </div>
+        <div className="miniDiv">
+          <ExploreIcon />
+          <p>Explore</p>
+        </div>
+        <div className="miniDiv">
+          <SubscriptionsIcon />
+          <p>Subscription</p>
+        </div>
+        <div className="miniDiv">
+          <VideoLibraryIcon />
+          <p>Videos</p>
         </div>
       </div>
     </div>

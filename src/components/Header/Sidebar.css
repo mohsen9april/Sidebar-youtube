@@ -15,6 +15,7 @@
   overflow-x: hidden;
   left: 0;
   top: 10px;
+  display: none;
 }
 
 .sidebar hr {
@@ -48,4 +49,25 @@
 
 .sidebar:hover::-webkit-scrollbar-thumb {
   background-color: rgb(184, 184, 184) !important;
+}
+
+.sidebar_mini {
+  background-color: white;
+  width: 5%;
+  position: fixed;
+  top: 90px;
+  z-index: 50;
+  height: 92vh;
+  left: 0;
+}
+
+.miniDiv {
+  padding: 10px 0;
+  text-align: center;
+  font-size: 10px;
+  color: rgb(112, 112, 112);
+}
+
+.miniDiv:hover {
+  background-color: lightgray;
 }
